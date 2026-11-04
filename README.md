@@ -1,16 +1,12 @@
-*This project has been created as part of the 42 curriculum by jbrito@student.42porto.com.*
+*This project has been created as part of the 42 curriculum by jbrito.*
 
-# Libft
+# LIBFT
 
 ## Description
 
-Libft is my first own C library, built as the first project of the 42 Common Core.
-The goal is to understand how common standard functions work by reimplementing them from scratch,
-and to build a personal toolbox that will be reused in later 42 projects.
+Libft is my first C library built as the first project of the 42 Common Core. The goal is to understand how standard functions work by creating them from scratch. It will also be used as a personal toolbox to reuse in later 42 projects.
 
-The library is compiled into a static archive, `libft.a`, using `cc` with the flags
-`-Wall -Wextra -Werror` and the `ar` command. No global variables are used, and helper
-functions are declared `static`. The only external functions used are `malloc`, `free` and `write`.
+The library is compiled into a static archive, `libft.a`, using `cc` with the flags `-Wall -Wextra -Werror` and the `ar` command. No global variables are used. The only external functions are `malloc`, `free` and `write`.
 
 ### Library content
 
@@ -30,46 +26,44 @@ functions are declared `static`. The only external functions used are `malloc`, 
 
 ## Instructions
 
-Compile the library from the root of the repository:
+To compile the library from the root of the repository:
 
 ```bash
-make        # builds libft.a
-make clean  # removes the object files
+make # builds libft.a
+make clean # removes the object files
 make fclean # removes the object files and libft.a
-make re     # fclean + all
+make re # fclean + all
 ```
 
-To use it in your own program, include the header and link the archive:
+To use it in your own program, include the header and link the archive.
 
 ```c
 #include "libft.h"
 ```
 
 ```bash
-cc -Wall -Wextra -Werror main.c -L. -lft -o my_program
+cc -Wall -Wextra -Werror main.c -L. -lft
 ```
 
 ## Resources
 
-- `man` pages of the reimplemented functions (`man 3 strlen`, `man 3 memmove`, etc.)
-- 42 Libft subject
-- GNU Make documentation
-- Community testers used to validate the work: libftTester (Tripouille), together with valgrind
+- `man` pages of the functions (ex: `man strlen`, `man memmove`, etc.).
+- 42 Libft subject.
+- GNU make documentation.
+- Community tester used to check the work: libftTester (Tripouille) together with valgrind, Francinette (xicodomingues).
 
 ### How AI was used
 
-I used Claude (Anthropic) as a tutor while building this project. It was used for:
+I used Claude kind of as a private tutor and professor while building this project. It was used for:
 
-- **Concept explanations**: `size_t`, `void *`, `const`, `unsigned char`, function pointers,
-  linked lists and `t_list **`, object files and static libraries.
-- **Step-by-step guidance**: hints and questions while I wrote each function myself,
-  and review of my code to point out bugs (wrong return types, missing NULL checks, off-by-one errors).
-- **Debugging**: understanding compiler errors and libftTester failures
-  (`ft_strncmp` unsigned comparison, `ft_calloc` overflow check, `ft_substr` allocation size,
-  `ft_itoa` digit counting), and setting up the WSL/clang/valgrind environment for testing.
-- **Project structure**: the `libft.h` prototype layout and the Makefile structure were
-  suggested by the AI and then adapted and understood by me. A reference `ft_itoa` found online was also
-  compared against my own version.
+- **Concept explanations**: `size_t`, `void *`, `const`, `unsigned char`, function pointers, linked list and `t_list **`, object files and static libraries.
+
+- **Step-by-step guidance**: hints and questions while I wrote each function myself, and review of my code to point out bugs or to make it cleaner.
+
+- **Debugging**: understanding compiler errors and libftTester failures (`ft_strncmp` unsigned comparison, `ft_calloc` overflow check, `ft_substr` allocation size, `ft_itoa` digit counting), handling allocation failures in `ft_split` (freeing what was already allocated) and `ft_lstmap`, norminette fixes in `libft.h` and setting up the WSL/clang/valgrind environment for testing.
+
+- **Project structure**: The Makefile structure was suggested and explained by the AI and then adapted and understood by me.
+
 - **Documentation**: a personal study guide and the structure of this README.
 
 I can explain every function in this repository.
