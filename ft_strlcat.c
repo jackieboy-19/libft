@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -32,3 +33,21 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[i + j] = '\0';
 	return (i + ft_strlen(src));
 }
+
+/*int	main(void)
+{
+	char	buf[10];
+	size_t r;
+
+	ft_strlcpy(buf, "ola", 10);
+	r = ft_strlcat(buf, "mundo", 10);
+	printf("String: %s, tamanho que tentou criar: %ld\n", buf, r);
+
+	ft_strlcpy(buf, "olamundo", 10);
+	r = ft_strlcat(buf, "!!!!!", 10);
+	printf("String: %s, tamanho que tentou criar: %ld\n", buf, r);
+
+	ft_strlcpy(buf, "ola", 10);
+	r = ft_strlcat(buf, "mundo", 2);
+	printf("String: %s, tamanho que tentou criar: %ld\n", buf, r);
+}*/

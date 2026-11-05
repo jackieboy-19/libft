@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -24,3 +25,23 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+
+/*int	main(void)
+{
+	char	buf[10];
+	int		i;
+	int		arr[4];
+
+	i = 0;
+	while (i < 9)
+	{
+		buf[i] = '.';
+		i++;
+	}
+	buf[9] = '\0';
+	printf("antes: %s\n", buf);
+	ft_memset(buf, 'A', 5);
+	printf("depois: %s\n", buf);
+	ft_memset(arr, 1, 4 * sizeof(int));
+	printf("%d %d %d %d\n", arr[0], arr[1], arr[2], arr[3]);
+}*/

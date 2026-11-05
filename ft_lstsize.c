@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 unsigned int	ft_lstsize(t_list *lst)
 {
@@ -24,3 +25,16 @@ unsigned int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
+
+/*int main(void)
+{
+	t_list *head = NULL;
+	printf("%u\n", ft_lstsize(head));
+
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("um")));
+	printf("%u\n", ft_lstsize(head));
+
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("dois")));
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("tres")));
+	printf("%u\n", ft_lstsize(head));
+}*/

@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -29,3 +30,13 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+/*int main(void)
+{
+	char a[] = {'a', 'b', '\0', 'c'};
+	char b[] = {'a', 'b', '\0', 'd'};
+
+	printf("%d\n", ft_memcmp(a, b, 4));
+	printf("%d\n", ft_memcmp(a, b, 3));
+	printf("%d\n", ft_strncmp(a, b, 4));
+}*/

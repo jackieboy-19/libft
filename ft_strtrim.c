@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 static int	check_set(char const *set, char const c)
 {
@@ -54,3 +55,24 @@ char	*ft_strtrim(char const *s1, char const *set)
 	res[k] = 0;
 	return (res);
 }
+
+/*int main(void)
+{
+	char *s;
+
+	s = ft_strtrim("    ola mundo  ", " ");
+	printf("[%s]\n", s);
+	free(s);
+
+	s = ft_strtrim("xxolaxxmundoxxx", "x");
+	printf("[%s]\n", s);
+	free(s);
+
+	s = ft_strtrim("     ", " ");
+	printf("[%s]\n", s);
+	free(s);
+
+	s = ft_strtrim("abcba", "ab");
+	printf("[%s]\n", s);
+	free(s);
+} */

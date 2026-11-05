@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -24,3 +25,23 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero (ptr, count * size);
 	return (ptr);
 }
+
+/*int main(void)
+{
+	int	*p;
+	int	i;
+
+	p = ft_calloc(5, sizeof(int));
+	if (p == NULL)
+		return (1);
+	i = 0;
+	while (i < 5)
+	{
+		printf("%d" ,p[i]);
+		i++;
+	}
+	free(p);
+
+	p = ft_calloc(SIZE_MAX, 2);
+	printf ("%p", p);
+}*/

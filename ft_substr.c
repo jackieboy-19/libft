@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -40,3 +41,21 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[j] = '\0';
 	return (substr);
 }
+
+/*int main(void)
+{
+	char	*s;
+	char	*original = "abcdefghij";
+
+	s = ft_substr(original, 2, 4);
+	printf("[%s]\n", s);
+	free(s);
+
+	s = ft_substr(original, 8, 10);
+	printf("[%s]\n", s);
+	free(s);
+
+	s = ft_substr(original, 20, 5);
+	printf("[%s]\n", s);
+	free(s);
+}*/

@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
@@ -20,3 +21,19 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst -> next;
 	}
 }
+
+/*void	print_content(void	*content)
+{
+	printf("%s\n", (char *)content);
+}
+
+int	main(void)
+{
+	t_list *head = NULL;
+
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("um")));
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("dois")));
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("tres")));
+
+	ft_lstiter(head, print_content);
+}*/

@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 t_list	*ft_lstnew(void *content)
 {
@@ -23,3 +24,16 @@ t_list	*ft_lstnew(void *content)
 	lst -> next = NULL;
 	return (lst);
 }
+
+/*int main(void)
+{
+	t_list *node;
+
+	node = ft_lstnew(ft_strdup("ola"));
+	if (node == NULL)
+		return (1);
+	printf("%s\n", (char *)node->content);
+	printf("%d\n", node->next == NULL);
+	free(node->content);
+	free(node);
+}*/

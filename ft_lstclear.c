@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
@@ -25,3 +26,22 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		(*lst) = store;
 	}
 }
+
+/*void	del_content(void *content)
+{
+	free(content);
+}
+
+int main(void)
+{
+	t_list *head = NULL;
+
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("um")));
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("dois")));
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("dois")));
+
+	printf("%u\n", ft_lstsize(head));
+	ft_lstclear(&head, del_content);
+	printf("%d\n", head == NULL);
+	printf("%u\n", ft_lstsize(head));
+}*/

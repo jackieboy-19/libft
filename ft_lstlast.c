@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 t_list	*ft_lstlast(t_list *lst)
 {
@@ -20,3 +21,19 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst -> next;
 	return (lst);
 }
+
+/*int main(void)
+{
+	t_list	*head = NULL;
+	t_list	*last;
+
+	printf("%d\n", ft_lstlast(head) == NULL);
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("um")));
+	last = ft_lstlast(head);
+	printf("%s\n", (char *)last->content);
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("dois")));
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("tres")));
+	last = ft_lstlast(head);
+	printf("%s\n", (char *)last->content);
+	printf("%d\n", last->next == NULL);
+}*/

@@ -23,6 +23,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 static int	count_words(char const *s, char c)
 {
@@ -94,3 +95,19 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (res);
 }
+
+/*int main(void)
+{
+	char	**res;
+	int	i;
+
+	res = ft_split("ola mundo 42", ' ');
+	i = 0;
+	while(res[i] != NULL)
+	{
+		printf("[%s]", res[i]);
+		free(res[i]);
+		i++;
+	}
+	free (res);
+}*/

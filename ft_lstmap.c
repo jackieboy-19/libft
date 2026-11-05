@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 t_list	*ft_lstmap(t_list *lst, void*(*f)(void *), void (*del)(void *))
 {
@@ -34,3 +35,34 @@ t_list	*ft_lstmap(t_list *lst, void*(*f)(void *), void (*del)(void *))
 	}
 	return (new_lst);
 }
+
+/*void	*add_excl(void *content)
+{
+	return (ft_strjoin((char *) content, "!"));
+}
+void	del_content(void *content)
+{
+	free(content);
+}
+
+void	print_content(void	*content)
+{
+	printf("%s\n", (char *)content);
+}
+
+int main(void)
+{
+	t_list *head = NULL;
+	t_list	*mapped;
+	
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("um")));
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("dois")));
+	ft_lstadd_back(&head, ft_lstnew(ft_strdup("tres")));
+	mapped = ft_lstmap(head, add_excl, del_content);
+
+	ft_lstiter(head, print_content);
+	ft_lstiter(mapped, print_content);
+
+	ft_lstclear(&head, del_content);
+	ft_lstclear(&mapped, del_content);
+}*/

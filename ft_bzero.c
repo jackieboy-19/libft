@@ -11,8 +11,30 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset (s, 0, n);
 }
+
+/*int main(void)
+{
+	unsigned char	z[5];
+	int	i;
+
+	i = 0;
+	while (i < 5)
+	{
+		z[i] = 'X';
+		i++;
+	}
+	ft_bzero(z, 3);
+	i = 0;
+	while (i < 5)
+	{
+		printf("%d ", z[i]);
+		i++;
+	}
+	printf("\n");
+}*/
